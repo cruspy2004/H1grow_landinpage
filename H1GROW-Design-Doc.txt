@@ -1,0 +1,269 @@
+================================================================================
+H1GROW LANDING PAGE
+DESIGN DOCUMENT
+================================================================================
+
+Version: 1.0
+Date: February 2026
+Design Reference: VengeanceUI Brutalist Aesthetic
+
+================================================================================
+DESIGN PHILOSOPHY
+================================================================================
+
+Inspired by VengeanceUI's brutalist aesthetic: dark, high-contrast, 
+unapologetically bold. This is not a soft, friendly SaaS page. This is for 
+creators who want to make real money and aren't afraid of standing out.
+
+CORE AESTHETIC
+--------------
+• BRUTALIST/INDUSTRIAL: Raw, geometric, functional
+• HIGH CONTRAST: Pure blacks, sharp whites, electric accent colors
+• AGGRESSIVE TYPOGRAPHY: Large, bold, in-your-face headlines
+• MINIMAL BUT IMPACTFUL: Every element has a purpose, no fluff
+• EDGY, NOT POLISHED: We're disruptors, not corporate
+
+================================================================================
+COLOR PALETTE
+================================================================================
+
+PRIMARY COLORS
+--------------
+• #000000 - Pure Black: Main background
+• #FFFFFF - Pure White: Primary text, high contrast elements
+
+ACCENT COLORS
+-------------
+• #00FF00 or #00FF94 - Electric/Neon Green: CTAs, highlights, success states
+• #FF0000 or #FF0055 - Hot Red/Pink: Attention grabbers, warnings, problem 
+  callouts
+• Optional: Electric Blue for secondary accents if needed
+
+NEUTRAL GRAYS
+-------------
+• #1A1A1A - Dark Gray: Card backgrounds
+• #333333 - Medium Gray: Borders, dividers
+• #888888 - Light Gray: Secondary text
+
+COLOR USAGE GUIDELINES
+-----------------------
+• Black background with white text as foundation
+• Neon green for all CTAs and positive actions
+• Hot red/pink for problem sections and urgency elements
+• Geometric color blocks to break up sections
+
+================================================================================
+TYPOGRAPHY
+================================================================================
+
+DISPLAY FONT (HEADLINES)
+-------------------------
+Font Options: Druk Wide Bold, Monument Extended, or Sequel Sans
+
+• Ultra-bold, condensed, geometric
+• All caps for major headlines
+• Usage: H1GROW logo, section titles, hero headline
+
+BODY FONT
+---------
+Font Options: Neue Haas Grotesk, Suisse Int'l, or Inter
+
+• Clean, readable, modern
+• Usage: Paragraphs, descriptions, CTAs
+
+TYPOGRAPHIC HIERARCHY
+----------------------
+• H1 (Hero): 80-120px, all caps, ultra-bold
+• H2 (Section Titles): 48-64px, all caps, bold
+• H3 (Card Titles): 24-32px, semi-bold
+• Body: 16-18px, regular weight
+
+KEY PRINCIPLE: Extreme scale jumps - no subtle sizing
+
+================================================================================
+LAYOUT & GRID
+================================================================================
+
+STRUCTURE
+---------
+• Full-width sections with max-width containers (1200px)
+• Asymmetric layouts - offset elements, diagonal cuts
+• Generous whitespace - let elements breathe
+• Grid-breaking elements - images/cards that bleed outside containers
+• Sharp geometric shapes - rectangles, triangles, diagonal lines as dividers
+
+SECTION DIVIDERS
+----------------
+• Thick horizontal lines (4-8px)
+• Diagonal slashes cutting across sections
+• Geometric shape overlays
+• Negative space manipulation
+
+================================================================================
+COMPONENT DESIGN
+================================================================================
+
+BUTTONS
+-------
+• Hard edges, no rounded corners (border-radius: 0)
+• Thick borders (2-3px)
+• All caps text
+• Hover: Inverted colors with hard transition (no smooth fade)
+• Primary CTA: Neon green background, black text
+• Secondary: Black background, white border, white text
+
+CARDS
+-----
+• Sharp rectangles, no rounded corners
+• Subtle borders (1-2px, #333)
+• Hover: Hard shadow drop, slight position shift
+• Black or very dark gray backgrounds
+• White text with colored accents
+
+FORMS
+-----
+• Brutalist input fields - thick borders, square corners
+• Labels inside or aggressively positioned outside
+• High contrast states (focus = neon green border)
+
+ICONS
+-----
+• Geometric, line-based
+• Minimal detail
+• High contrast (white or neon colors)
+
+================================================================================
+ANIMATION & MOTION
+================================================================================
+
+PRINCIPLES
+----------
+• Hard cuts over smooth transitions
+• Aggressive timing - fast, snappy (100-200ms)
+• Glitch effects on hover (optional, if not overdone)
+• Parallax scrolling for depth
+• Reveal animations - elements slide/cut in sharply
+
+SPECIFIC EFFECTS
+----------------
+• Hero text: Staggered reveal with hard cuts
+• Section scroll: Elements snap into view
+• Button hover: Color inversion with no transition
+• Card hover: Hard shadow drop + 4px position shift
+
+DO NOT USE
+----------
+• Smooth ease-in-out curves
+• Bouncy animations
+• Gradients (unless very deliberate and harsh)
+• Soft shadows
+
+================================================================================
+PAGE SECTION DETAILS
+================================================================================
+
+SECTION 1: HERO
+---------------
+• Full viewport height
+• Headline: "MONETIZE YOUR CONTENT" - 100px, all caps, white, hard edges
+• Subheadline: "H1GROW helping Pakistani content creators get the 
+  monetization they deserve" - 24px, light gray
+• CTA button: Neon green, black text, thick border, all caps "GET STARTED"
+• Background: Pure black with subtle geometric pattern or grid
+• Accent: Neon green underline or block behind key word
+
+SECTION 2: PROBLEM
+------------------
+• Title: "THE PROBLEM" - red/hot pink color
+• 3 problem cards laid out in grid
+• Each card: Black background, red accent border on left edge, white text
+• Icons: Simple geometric shapes in red
+• Visual treatment: Diagonal slash dividing this section from hero
+
+Problem Cards:
+1. Low value brands
+2. No ad revenue
+3. Physical products = inventory risk, delivery headaches, thin margins
+
+SECTION 3: SOLUTION
+-------------------
+• Title: "THE SOLUTION" - neon green color
+• Main copy: Large text (32-40px) explaining personalized software
+• Highlighted phrase: "TAILORED TO YOUR BRAND" in neon green block
+• Description: Personalized software tailored to your brand tone and audience
+• Visual: Mockup of software product in harsh lighting (optional)
+
+SECTION 4: HOW IT WORKS (3 STEPS)
+----------------------------------
+• Numbered steps: Large geometric numbers (01, 02, 03)
+• Layout: Horizontal timeline or vertical stack
+• Each step: Number in neon green, title in white (all caps), description 
+  in gray
+• Arrow/connectors: Sharp geometric arrows between steps
+
+Step 1: Click the button
+Step 2: Explain what you want
+Step 3: Get your products, risk free
+
+SECTION 5: REFER A FRIEND
+--------------------------
+• Title: "BRING YOUR CREW"
+• Simple explanation of referral benefits
+• CTA: Share link button in neon green
+• Visual: Simple graphic showing network effect
+
+SECTION 6: FAQ
+--------------
+• Accordion style with hard edges
+• Closed state: White text on black
+• Open state: Neon green accent bar appears
+• Transition: Hard snap open/close (no smooth accordion)
+
+SECTION 7: FINAL CTA
+--------------------
+• Large section with centered content
+• Headline: "READY TO GROW?" - huge, all caps
+• Form fields: Name, Email, Instagram handle, Follower count
+• Submit button: Neon green, oversized
+• Urgency text: "Limited spots - 10 creators this month" in red
+
+SECTION 8: FOOTER
+-----------------
+• Minimal, clean
+• White text on black
+• Links separated by slashes: "About / Contact / Privacy"
+• Small H1GROW logo
+
+================================================================================
+RESPONSIVE DESIGN
+================================================================================
+
+• Mobile: Stack everything vertically but maintain brutalist aesthetic
+• Keep type hierarchy even on small screens
+• Buttons go full-width but maintain thick borders
+• No compromise on boldness
+
+================================================================================
+UNIQUE VISUAL ELEMENTS
+================================================================================
+
+• Geometric shapes as section backgrounds (triangles, rectangles)
+• Diagonal cuts between sections
+• Thick accent lines (neon green or red) used sparingly for emphasis
+• Grid overlay on hero or background (very subtle)
+• Glitch effect on logo or key headlines (very subtle, on hover only)
+
+================================================================================
+TECHNICAL IMPLEMENTATION NOTES
+================================================================================
+
+• Built as a single-page React application
+• CSS-in-JS or Tailwind for styling (with custom brutalist theme)
+• Framer Motion for animations (with hard-cut timing overrides)
+• Form integration: To be determined (Tally, Google Forms, or custom backend)
+• Hosting: Vercel or Netlify
+• Analytics: Google Analytics + Meta Pixel
+
+================================================================================
+END OF DOCUMENT
+================================================================================
