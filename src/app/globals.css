@@ -73,7 +73,8 @@
   .brutal-btn {
     @apply uppercase font-display font-bold tracking-wider px-8 py-4 text-sm md:text-base;
     border: 3px solid currentColor;
-    transition: none;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
   }
 
   .brutal-btn-primary {

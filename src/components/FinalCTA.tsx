@@ -42,7 +42,7 @@ export default function FinalCTA() {
                         Join the first wave of Pakistani creators building real, recurring revenue.
                     </p>
                     <p className="text-brutal-red font-display font-bold text-sm tracking-widest uppercase mb-12">
-                        ⚠ LIMITED SPOTS — 10 CREATORS THIS MONTH
+                        People abroad have been doing this, why not you? 
                     </p>
                 </motion.div>
 

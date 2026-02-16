@@ -63,10 +63,10 @@ export default function Problem() {
                     className="mb-16"
                 >
                     <p className="font-display text-xs tracking-[0.3em] text-brutal-muted mb-3 uppercase">
-                        WHY CREATORS STRUGGLE
+                        STRUGGLING WITH 
                     </p>
                     <h2 className="font-display font-bold text-section uppercase text-brutal-red">
-                        THE PROBLEM
+                        MONETIZATION?
                     </h2>
                     <div className="w-20 h-1 bg-brutal-red mt-4" />
                 </motion.div>

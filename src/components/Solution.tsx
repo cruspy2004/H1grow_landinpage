@@ -8,6 +8,7 @@ const benefits = [
     "Subscription-based for recurring monthly revenue",
     "Fully managed — we handle dev, hosting & support",
     "Completely risk-free for creators",
+    "Full creative autonomy to the creators"
 ];
 
 export default function Solution() {
@@ -27,7 +28,7 @@ export default function Solution() {
                             transition={{ duration: 0.15, ease: "linear" }}
                         >
                             <p className="font-display text-xs tracking-[0.3em] text-brutal-muted mb-3 uppercase">
-                                WHAT WE DO
+                                {/* WHAT WE DO */}
                             </p>
                             <h2 className="font-display font-bold text-section uppercase text-silver">
                                 THE SOLUTION
@@ -42,7 +43,7 @@ export default function Solution() {
                             transition={{ delay: 0.1, duration: 0.15, ease: "linear" }}
                             className="text-white text-xl md:text-2xl lg:text-3xl font-display font-medium leading-snug mb-8"
                         >
-                            We build personalized software products{" "}
+                            While all the others are selling hoodies you sell software products{" "}
                             <span className="inline-block bg-silver text-black px-3 py-1 font-bold">
                                 TAILORED TO YOUR BRAND
                             </span>{" "}
@@ -56,9 +57,9 @@ export default function Solution() {
                             transition={{ delay: 0.2, duration: 0.15, ease: "linear" }}
                             className="text-brutal-muted text-body-lg font-body mb-10"
                         >
-                            Think of it like this: instead of selling overpriced hoodies,
+                            {/* Think of it like this: instead of selling overpriced hoodies,
                             you sell software that actually helps your followers — and
-                            earns you real, recurring income.
+                            earns you real, recurring income. */}
                         </motion.p>
 
                         {/* Benefits list */}

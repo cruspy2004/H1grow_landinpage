@@ -8,9 +8,9 @@ const wordVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: i * 0.1,
-            duration: 0.15,
-            ease: "linear" as const,
+            delay: i * 0.12,
+            duration: 0.6,
+            ease: "easeOut" as const,
         },
     }),
 };
@@ -36,10 +36,10 @@ export default function Hero() {
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.05, duration: 0.1 }}
+                    transition={{ delay: 0.05, duration: 0.5, ease: "easeOut" }}
                     className="font-display text-xs md:text-sm tracking-[0.3em] text-brutal-muted uppercase mb-8"
                 >
-                    FOR PAKISTANI CREATORS
+                     FOR PAKISTANI CREATORS
                 </motion.p>
 
                 {/* Main Headline */}
@@ -63,11 +63,10 @@ export default function Hero() {
                 <motion.p
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.15, ease: "linear" }}
+                    transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
                     className="text-brutal-muted text-body-lg max-w-2xl mx-auto mb-12 font-body"
                 >
-                    H1GROW helps Pakistani content creators get the monetization they
-                    deserve — through personalized software products your audience will
+                    Personalized software products your audience will
                     love.
                 </motion.p>
 
@@ -75,7 +74,7 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.65, duration: 0.1, ease: "linear" }}
+                    transition={{ delay: 0.65, duration: 0.5, ease: "easeOut" }}
                     className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                 >
                     <a href="#cta" className="brutal-btn-primary text-base px-10 py-5">
@@ -90,7 +89,7 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.8, duration: 0.15 }}
+                    transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
                     className="mt-20 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16"
                 >
                     {[
@@ -116,7 +115,7 @@ export default function Hero() {
             {/* Scroll indicator */}
             <motion.div
                 animate={{ y: [0, 8, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
                 className="absolute bottom-8 left-1/2 -translate-x-1/2"
             >
                 <div className="w-5 h-8 border-2 border-brutal-muted rounded-none flex justify-center pt-1">
