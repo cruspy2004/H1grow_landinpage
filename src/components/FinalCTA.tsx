@@ -11,11 +11,37 @@ export default function FinalCTA() {
         followers: "",
     });
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Placeholder — replace with actual form handling
-        setSubmitted(true);
+        setLoading(true);
+        setError("");
+
+        try {
+            const res = await fetch("/api/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                throw new Error(data.error || "Something went wrong");
+            }
+
+            setSubmitted(true);
+        } catch (err) {
+            setError(
+                err instanceof Error
+                    ? err.message
+                    : "Something went wrong. Please try again."
+            );
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -33,7 +59,7 @@ export default function FinalCTA() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.15, ease: "linear" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                     <h2 className="font-display font-bold text-hero uppercase text-white mb-6">
                         READY TO GROW?
@@ -42,7 +68,7 @@ export default function FinalCTA() {
                         Join the first wave of Pakistani creators building real, recurring revenue.
                     </p>
                     <p className="text-brutal-red font-display font-bold text-sm tracking-widest uppercase mb-12">
-                        People abroad have been doing this, why not you? 
+                        People abroad have been doing this, why not you?
                     </p>
                 </motion.div>
 
@@ -53,7 +79,7 @@ export default function FinalCTA() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.1, duration: 0.15, ease: "linear" }}
+                        transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
                         className="space-y-4"
                     >
                         {[
@@ -87,22 +113,31 @@ export default function FinalCTA() {
                                     setFormData({ ...formData, [field.name]: e.target.value })
                                 }
                                 required
-                                className="w-full bg-brutal-dark border-2 border-brutal-border text-white font-display text-sm tracking-wider uppercase px-6 py-5 placeholder:text-brutal-muted focus:border-silver focus:outline-none transition-none"
+                                disabled={loading}
+                                className="w-full bg-brutal-dark border-2 border-brutal-border text-white font-display text-sm tracking-wider uppercase px-6 py-5 placeholder:text-brutal-muted focus:border-silver focus:outline-none transition-colors duration-200 disabled:opacity-50"
                             />
                         ))}
 
+                        {/* Error message */}
+                        {error && (
+                            <p className="text-brutal-red font-display text-sm tracking-wider uppercase">
+                                ⚠ {error}
+                            </p>
+                        )}
+
                         <button
                             type="submit"
-                            className="w-full brutal-btn-primary text-base py-6 mt-4 font-bold tracking-widest"
+                            disabled={loading}
+                            className="w-full brutal-btn-primary text-base py-6 mt-4 font-bold tracking-widest disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            CLAIM YOUR SPOT →
+                            {loading ? "SUBMITTING..." : "CLAIM YOUR SPOT →"}
                         </button>
                     </motion.form>
                 ) : (
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.1 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
                         className="border-2 border-silver bg-brutal-dark p-12"
                     >
                         <div className="w-12 h-12 bg-silver mx-auto mb-6 flex items-center justify-center">
@@ -119,9 +154,12 @@ export default function FinalCTA() {
                         <h3 className="font-display font-bold text-2xl uppercase text-white mb-4">
                             YOU&apos;RE IN
                         </h3>
-                        <p className="text-brutal-muted font-body">
+                        <p className="text-brutal-muted font-body mb-2">
                             We&apos;ll reach out within 24 hours to set up your discovery call.
                             Get ready to grow.
+                        </p>
+                        <p className="text-brutal-muted font-body text-sm">
+                            Check your email for a confirmation. ✉️
                         </p>
                     </motion.div>
                 )}
