@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import IntroAnimation from "@/components/IntroAnimation";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
@@ -9,17 +13,29 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+    const [introComplete, setIntroComplete] = useState(false);
+
     return (
         <main>
-            <Navbar />
-            <Hero />
-            <Problem />
-            <Solution />
-            <HowItWorks />
-            <ReferAFriend />
-            <FAQ />
-            <FinalCTA />
-            <Footer />
+            {!introComplete && (
+                <IntroAnimation onComplete={() => setIntroComplete(true)} />
+            )}
+            <div
+                style={{
+                    opacity: introComplete ? 1 : 0,
+                    transition: "opacity 0.7s ease",
+                }}
+            >
+                <Navbar />
+                <Hero />
+                <Problem />
+                <Solution />
+                <HowItWorks />
+                <ReferAFriend />
+                <FAQ />
+                <FinalCTA />
+                <Footer />
+            </div>
         </main>
     );
 }

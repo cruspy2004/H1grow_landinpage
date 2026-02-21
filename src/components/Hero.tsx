@@ -39,7 +39,7 @@ export default function Hero() {
                     transition={{ delay: 0.05, duration: 0.5, ease: "easeOut" }}
                     className="font-display text-xs md:text-sm tracking-[0.3em] text-brutal-muted uppercase mb-8"
                 >
-                     FOR PAKISTANI CREATORS
+                    OR PAKISTANI CREATORS
                 </motion.p>
 
                 {/* Main Headline */}
