@@ -18,6 +18,9 @@ export const metadata: Metadata = {
             "The platform helping Pakistani creators earn what they deserve through personalized software products.",
         type: "website",
     },
+    icons: {
+        icon: "/icon.png",
+    },
 };
 
 export default function RootLayout({

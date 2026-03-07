@@ -13,15 +13,15 @@ export default function Footer() {
 
                     {/* Links */}
                     <div className="flex items-center gap-4 font-display text-xs tracking-widest text-brutal-muted uppercase">
-                        <a href="#" className="hover:text-white transition-none">
+                        <a href="/about" className="hover:text-white transition-none">
                             ABOUT
                         </a>
                         <span className="text-brutal-border">/</span>
-                        <a href="#" className="hover:text-white transition-none">
+                        <a href="/contact" className="hover:text-white transition-none">
                             CONTACT
                         </a>
                         <span className="text-brutal-border">/</span>
-                        <a href="#" className="hover:text-white transition-none">
+                        <a href="/privacy" className="hover:text-white transition-none">
                             PRIVACY
                         </a>
                     </div>
